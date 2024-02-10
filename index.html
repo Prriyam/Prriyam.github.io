@@ -119,100 +119,182 @@
 								<header class="major">
 									<h2>Projects</h2>
 								</header>
+								<div id="projectTabs">
+									<button class="tablinks" onclick="filterProjects('all')">All</button>
+									<button class="tablinks" onclick="filterProjects('sql')">SQL</button>
+									<button class="tablinks" onclick="filterProjects('python')">Python</button>
+									<button class="tablinks" onclick="filterProjects('r')">R</button>
+									<button class="tablinks" onclick="filterProjects('tableau')">Tableau</button>
+									<button class="tablinks" onclick="filterProjects('power-bi')">Power BI</button>
+									<button class="tablinks" onclick="filterProjects('excel')">Excel</button>
+									<button class="tablinks" onclick="filterProjects('miscellaneous')">Misc</button>
+								</div>
+								<br> 
 								<ul class="features">
-									<li>
-										<img src="images/Credit.jpg" alt="Credit Card Symbol">
-										<h3><b>Credit Card Approval Prediction System</b></h3>
-										<button class="Learn-More" data-target="https://github.com/Prriyam/Credit-card-Approval-prediction-System">Learn More</button>
-									</li>
-									<li>
-										<img src="images/Truck.jpg" alt="Truck Symbol">
-										<h3><b>Truck Fleet Movement Reporting and Analytics</b></h3>
-										<button class="Learn-More" data-target="https://github.com/Prriyam/Truck-fleet-movement-Reporting-and-Analytics">Learn More</button>
-									</li>
-									<li>
-										<img src="images/Ecommerce.jpg" alt="E-Commerce Symbol">
-										<h3><b>E-Commerce Database Management System</b></h3>
-										<button class="Learn-More" data-target="https://github.com/Prriyam/E-commerce-Database-Management-System">Learn More</button>
-									</li>
-									<li>
-										<img src="images/Heartattack.jpg" alt="Heart Attack Symbol">
-										<h3><b>Heart - Attack Prediction System</b></h3>
-										<button class="Learn-More" data-target="https://github.com/Prriyam/Heart-Attack-Prediction-System">Learn More</button>
-									</li>
-									<li>
-										<img src="images/Disney.jpg" alt="Disney Symbol">
-										<h3><b>Alteryx - Walt Disney Data Exploration</b></h3>
-										<button class="Learn-More" data-target="https://github.com/Prriyam/Alteryx-Datathon-Project">Learn More</button>
+
 									<li>
 										<img src="images/Gender Dynamic.jpeg" alt="Gender Dynamic Symbol">
 										<h3><b>Gender Dynamics and Compensation Analysis</b></h3>
+										<span class="categories" style="display: none;">all, sql</span>
 										<button class="Learn-More" data-target="https://github.com/Prriyam/Gender-Dynamics-and-Compensation-Analysis-in-Corporate-Environments-A-Longitudinal-Study">Learn More</button>
 									</li>
+
 									<li>
-										<img src="images/Financial Performance Dashboard.png" alt="Financial Performance Symbol">
-										<h3><b>Financial Performance Analysis Dashboard using Power BI</b></h3>
-										<button class="Learn-More" data-target="https://github.com/Prriyam/Maven-Market-s-Financial-Performance-Dashboard">Learn More</button>
+										<img src="images/Ecommerce.jpg" alt="E-Commerce Symbol">
+										<h3><b>E-Commerce Database Management System</b></h3>
+										<span class="categories" style="display: none;">all, sql</span>
+										<button class="Learn-More" data-target="https://github.com/Prriyam/E-commerce-Database-Management-System">Learn More</button>
 									</li>
-									<li>
-										<img src="images/Nike.png" alt="Nike Symbol">
-										<h3><b>Marketing Web Analytics and Insights - Nike</b></h3>
-										<button class="Learn-More" data-target="https://github.com/Prriyam/Marketing-Web-Analytics-and-Insights---Nike">Learn More</button>
-									</li>
+
 									<li>
 										<img src="images/Air Pollution.jpeg" alt="Air Pollution Symbol">
 										<h3><b>Time Series Analysis of Air Pollution in the US</b></h3>
+										<span class="categories" style="display: none;">all, python</span>
 										<button class="Learn-More" data-target="https://github.com/Prriyam/Time-Series-Analysis-of-Air-Pollution-in-the-United-States">Learn More</button>
-									</li>
-									<li>
-										<img src="images/Instacart Market Basket Analysis.jpeg" alt="Instacart Symbol">
-										<h3><b>Instacart Market Basket Analysis using Tableau</b></h3>
-										<button class="Learn-More" data-target="https://github.com/Prriyam/Instacart-Market-Basket-Analysis-using-Tableau">Learn More</button>
-									</li>
-									<li>
-										<img src="images/Natural Disaster.jpeg" alt="Natural Disaster Symbol">
-										<h3><b>Impact of the Natural Disasters on the Energy Industry</b></h3>
-										<button class="Learn-More" data-target="https://github.com/Prriyam/Analysis-of-the-Impact-of-Natural-Disasters-on-the-Energy-Industry">Learn More</button>
-									</li>
-									<li>
-										<img src="images/Crop Yeild.jpeg" alt="Crop Yield Symbol">
-										<h3><b>Agricultural Insights - Navigating US Crop Yields through Tableau</b></h3>
-										<button class="Learn-More" data-target="https://github.com/Prriyam/Agricultural-Insights-Navigating-U.S.-Crop-Yields-through-Tableau">Learn More</button>
-									</li>
-									<li>
-										<img src="images/Food Court Data.jpeg" alt="Food Court Symbol">
-										<h3><b>UniBites - Visualizing University Food Court Data using TreeMaps</b></h3>
-										<button class="Learn-More" data-target="https://github.com/Prriyam/UniBites-Visualizing-University-Food-Court-Data-with-TreeMap-Technique">Learn More</button>
-									</li>
-									<li>
-										<img src="images/Titanic.jpeg" alt="Titanic Symbol">
-										<h3><b>ClusterCruise - K-Means Analysis and Visualization using Tableau</b></h3>
-										<button class="Learn-More" data-target="https://github.com/Prriyam/ClusterCruise-Explored-K-Means-Analysis-and-Visualized-Results-on-Titanic-Dataset">Learn More</button>
-									</li>
-									<li>
-										<img src="images/Netflix.png" alt="Netflix Symbol">
-										<h3><b>Netflix Dashboard using Tableau</b></h3>
-										<button class="Learn-More" data-target="https://github.com/Prriyam/Netflix-Dashboard-using-Tableau">Learn More</button>
-									</li>
-									<li>
-										<img src="images/COVID19.jpeg" alt="COVID 19 Symbol">
-										<h3><b>COVID-19 Data Exploration and Visualization with Altair in Python</b></h3>
-										<button class="Learn-More" data-target="https://github.com/Prriyam/COVID-19-Data-Exploration-and-Visualization-with-Altair-in-Python">Learn More</button>
-									</li>
+									</li>	
+
 									<li>
 										<img src="images/CROWDSOURCED.jpeg" alt="CROWD Symbol">
 										<h3><b>Optimizing Crowd Sourced Grocery Prices Data using Python</b></h3>
+										<span class="categories" style="display: none;">all, python</span>
 										<button class="Learn-More" data-target="https://github.com/Prriyam/Optimizing-Crowd-Sourced-Grocery-Prices-Data-using-Python">Learn More</button>
 									</li>
+
+									<li>
+										<img src="images/Credit.jpg" alt="Credit Card Symbol">
+										<h3><b>Credit Card Approval Prediction System</b></h3>
+										<span class="categories" style="display: none;">all, python</span>
+										<button class="Learn-More" data-target="https://github.com/Prriyam/Credit-card-Approval-prediction-System">Learn More</button>
+									</li>
+
+									<li>
+										<img src="images/COVID19.jpeg" alt="COVID 19 Symbol">
+										<h3><b>COVID-19 Data Exploration and Visualization with Altair in Python</b></h3>
+										<span class="categories" style="display: none;">all, python</span>
+										<button class="Learn-More" data-target="https://github.com/Prriyam/COVID-19-Data-Exploration-and-Visualization-with-Altair-in-Python">Learn More</button>
+									</li>
+
+									<li>
+										<img src="images/Heartattack.jpg" alt="Heart Attack Symbol">
+										<h3><b>Heart - Attack Prediction System</b></h3>
+										<span class="categories" style="display: none;">all, r</span>
+										<button class="Learn-More" data-target="https://github.com/Prriyam/Heart-Attack-Prediction-System">Learn More</button>
+									</li>
+
+									<li>
+										<img src="images/Titanic.jpeg" alt="Titanic Symbol">
+										<h3><b>ClusterCruise - K-Means Analysis and Visualization using Tableau</b></h3>
+										<span class="categories" style="display: none;">all, , r, tableau</span>
+										<button class="Learn-More" data-target="https://github.com/Prriyam/ClusterCruise-Explored-K-Means-Analysis-and-Visualized-Results-on-Titanic-Dataset">Learn More</button>
+									</li>
+
+									<li>
+										<img src="images/Instacart Market Basket Analysis.jpeg" alt="Instacart Symbol">
+										<h3><b>Instacart Market Basket Analysis using Tableau</b></h3>
+										<span class="categories" style="display: none;">all, tableau</span>
+										<button class="Learn-More" data-target="https://github.com/Prriyam/Instacart-Market-Basket-Analysis-using-Tableau">Learn More</button>
+									</li>
+
+									<li>
+										<img src="images/Natural Disaster.jpeg" alt="Natural Disaster Symbol">
+										<h3><b>Impact of the Natural Disasters on the Energy Industry</b></h3>
+										<span class="categories" style="display: none;">all, tableau</span>
+										<button class="Learn-More" data-target="https://github.com/Prriyam/Analysis-of-the-Impact-of-Natural-Disasters-on-the-Energy-Industry">Learn More</button>
+									</li>
+
+									<li>
+										<img src="images/Crop Yeild.jpeg" alt="Crop Yield Symbol">
+										<h3><b>Agricultural Insights - Navigating US Crop Yields through Tableau</b></h3>
+										<span class="categories" style="display: none;">all, tableau</span>
+										<button class="Learn-More" data-target="https://github.com/Prriyam/Agricultural-Insights-Navigating-U.S.-Crop-Yields-through-Tableau">Learn More</button>
+									</li>
+
+									<li>
+										<img src="images/Food Court Data.jpeg" alt="Food Court Symbol">
+										<h3><b>UniBites - Visualizing University Food Court Data using TreeMaps</b></h3>
+										<span class="categories" style="display: none;">all, tableau</span>
+										<button class="Learn-More" data-target="https://github.com/Prriyam/UniBites-Visualizing-University-Food-Court-Data-with-TreeMap-Technique">Learn More</button>
+									</li>
+
+									<li>
+										<img src="images/Netflix.png" alt="Netflix Symbol">
+										<h3><b>Netflix Dashboard using Tableau</b></h3>
+										<span class="categories" style="display: none;">all, tableau</span>
+										<button class="Learn-More" data-target="https://github.com/Prriyam/Netflix-Dashboard-using-Tableau">Learn More</button>
+									</li>
+
+									<li>
+										<img src="images/Financial Performance Dashboard.png" alt="Financial Performance Symbol">
+										<h3><b>Financial Performance Analysis Dashboard using Power BI</b></h3>
+										<span class="categories" style="display: none;">all, power-bi</span>
+										<button class="Learn-More" data-target="https://github.com/Prriyam/Maven-Market-s-Financial-Performance-Dashboard">Learn More</button>
+									</li>
+
 									<li>
 										<img src="images/TOYSTORE.jpeg" alt="Toy Store Symbol">
 										<h3><b>Toy Store KPI Report in Power BI</b></h3>
+										<span class="categories" style="display: none;">all, power-bi</span>
 										<button class="Learn-More" data-target="https://github.com/Prriyam/Toy-Store-KPI-Report-using-Power-BI">Learn More</button>
 									</li>
+
+									<li>
+										<img src="images/Coffee.jpg" alt="Coffee Symbol">
+										<h3><b>Coffee Shop Sales Analysis using Excel</b></h3>
+										<span class="categories" style="display: none;">all, excel</span>
+										<button class="Learn-More" data-target="https://github.com/Prriyam/Coffee-Shop-Sales-Analysis-using-Excel">Learn More</button>
 									</li>
+
+									<li>
+										<img src="images/Collision.jpg" alt="Collision Symbol">
+										<h3><b>New York City Collision Analysis using Excel</b></h3>
+										<span class="categories" style="display: none;">all, excel</span>
+										<button class="Learn-More" data-target="https://github.com/Prriyam/New-York-City-Collision-Analysis-using-Excel">Learn More</button>
+									</li>
+
+									<li>
+										<img src="images/HR.jpg" alt="HR Symbol">
+										<h3><b>HR Employee Survey using Excel</b></h3>
+										<span class="categories" style="display: none;">all, excel</span>
+										<button class="Learn-More" data-target="https://github.com/Prriyam/HR-Employee-Survey-Responses-using-Excel">Learn More</button>
+									</li>
+
+									<li>
+										<img src="images/Truck.jpg" alt="Truck Symbol">
+										<h3><b>Truck Fleet Movement Reporting and Analytics</b></h3>
+										<span class="categories" style="display: none;">all, miscellaneous</span>
+										<button class="Learn-More" data-target="https://github.com/Prriyam/Truck-fleet-movement-Reporting-and-Analytics">Learn More</button>
+									</li>
+
+									<li>
+										<img src="images/Disney.jpg" alt="Disney Symbol">
+										<h3><b>Alteryx - Walt Disney Data Exploration</b></h3>
+										<span class="categories" style="display: none;">all, miscellaneous</span>
+										<button class="Learn-More" data-target="https://github.com/Prriyam/Alteryx-Datathon-Project">Learn More</button>
+									</li>
+
+									<li>
+										<img src="images/Nike.png" alt="Nike Symbol">
+										<h3><b>Marketing Web Analytics and Insights - Nike</b></h3>
+										<span class="categories" style="display: none;">all, miscellaneous</span>
+										<button class="Learn-More" data-target="https://github.com/Prriyam/Marketing-Web-Analytics-and-Insights---Nike">Learn More</button>
+									</li>
+
 								</ul>
 							</section>			
 							
+							<script>
+								function filterProjects(category) {
+									var items = document.querySelectorAll("#Projects .features li");
+									items.forEach(function(item) {
+										var categories = item.querySelector("span.categories").innerText.toLowerCase().split(', ');
+										if (categories.includes(category) || category === 'all') {
+											item.style.display = "block";
+										} else {
+											item.style.display = "none";
+										}
+									});
+								}
+							</script>
 
 						<!-- Get Started -->
 							<section id="Contact Information" class="main special">
@@ -246,7 +328,7 @@
 								<dt>Phone</dt>
 								<dd>+1 (469) 465-3992</dd>
 								<dt>Email</dt>
-								<dd><a href="#">prriyamvradhap@gmail.com</a></dd>
+								<dd><a href="#">prriyamvradha@gmail.com</a></dd>
 							</dl>
 							<ul class="icons">
 								<li><a href="https://www.linkedin.com/in/prriyam/" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
