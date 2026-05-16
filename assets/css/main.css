@@ -574,6 +574,8 @@ input, select, textarea {
 					padding-top: 3em;
 				}
 
+		}
+
 		@media screen and (max-width: 1680px) {
 
 			.row {
@@ -1224,87 +1226,87 @@ input, select, textarea {
 
 				.row.gtr-25 {
 					margin-top: 0;
-					margin-left: -0.375em;
+					margin-left: -0.3125em;
 				}
 
 					.row.gtr-25 > * {
-						padding: 0 0 0 0.375em;
+						padding: 0 0 0 0.3125em;
 					}
 
 					.row.gtr-25.gtr-uniform {
-						margin-top: -0.375em;
+						margin-top: -0.3125em;
 					}
 
 						.row.gtr-25.gtr-uniform > * {
-							padding-top: 0.375em;
+							padding-top: 0.3125em;
 						}
 
 				.row.gtr-50 {
 					margin-top: 0;
-					margin-left: -0.75em;
+					margin-left: -0.625em;
 				}
 
 					.row.gtr-50 > * {
-						padding: 0 0 0 0.75em;
+						padding: 0 0 0 0.625em;
 					}
 
 					.row.gtr-50.gtr-uniform {
-						margin-top: -0.75em;
+						margin-top: -0.625em;
 					}
 
 						.row.gtr-50.gtr-uniform > * {
-							padding-top: 0.75em;
+							padding-top: 0.625em;
 						}
 
 				.row {
 					margin-top: 0;
-					margin-left: -1.5em;
+					margin-left: -1em;
 				}
 
 					.row > * {
-						padding: 0 0 0 1.5em;
+						padding: 0 0 0 1em;
 					}
 
 					.row.gtr-uniform {
-						margin-top: -1.5em;
+						margin-top: -1em;
 					}
 
 						.row.gtr-uniform > * {
-							padding-top: 1.5em;
+							padding-top: 1em;
 						}
 
 				.row.gtr-150 {
 					margin-top: 0;
-					margin-left: -2.25em;
+					margin-left: -1.5em;
 				}
 
 					.row.gtr-150 > * {
-						padding: 0 0 0 2.25em;
+						padding: 0 0 0 1.5em;
 					}
 
 					.row.gtr-150.gtr-uniform {
-						margin-top: -2.25em;
+						margin-top: -1.5em;
 					}
 
 						.row.gtr-150.gtr-uniform > * {
-							padding-top: 2.25em;
+							padding-top: 1.5em;
 						}
 
 				.row.gtr-200 {
 					margin-top: 0;
-					margin-left: -3em;
+					margin-left: -2em;
 				}
 
 					.row.gtr-200 > * {
-						padding: 0 0 0 3em;
+						padding: 0 0 0 2em;
 					}
 
 					.row.gtr-200.gtr-uniform {
-						margin-top: -3em;
+						margin-top: -2em;
 					}
 
 						.row.gtr-200.gtr-uniform > * {
-							padding-top: 3em;
+							padding-top: 2em;
 						}
 
 		}
@@ -3783,3 +3785,319 @@ input, select, textarea {
 			}
 
 		}
+/* ============================================
+   PROJECTS SECTION — Modern Card Layout
+   Add these rules to the bottom of main.css
+   ============================================ */
+
+/* Filter Tabs */
+#projectTabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+#projectTabs .tablinks {
+    appearance: none;
+    background: transparent;
+    border: 1px solid #dddddd;
+    border-radius: 999px;
+    color: #636363;
+    cursor: pointer;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 0.78em;
+    font-weight: 300;
+    height: auto;
+    line-height: 1;
+    min-width: 0;
+    padding: 0.45em 1.1em;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    white-space: nowrap;
+    box-shadow: none;
+}
+
+#projectTabs .tablinks:hover {
+    background-color: rgba(222, 222, 222, 0.35);
+    border-color: #aaaaaa;
+    color: #444444;
+}
+
+#projectTabs .tablinks.active-tab {
+    background: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+    border-color: transparent;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+/* Category heading */
+.proj-cat-label {
+    font-size: 0.68em;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    text-align: left;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.75em;
+    border-bottom: 1px solid #eeeeee;
+    width: 100%;
+}
+
+/* Category section wrapper */
+.proj-category-block {
+    margin-bottom: 2.5em;
+    width: 100%;
+    text-align: left;
+}
+
+/* Project card grid */
+.proj-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+/* Individual project card */
+.proj-card {
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+    padding: 14px 16px;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.15s ease;
+    text-align: left;
+}
+
+.proj-card:hover {
+    border-color: #a89cc8;
+    background-color: #faf9fe;
+    transform: translateY(-2px);
+    border-bottom-color: transparent;
+    color: inherit;
+}
+
+.proj-card h4 {
+    font-size: 0.82em;
+    font-weight: 400;
+    color: #444444;
+    margin: 0 0 10px 0;
+    line-height: 1.45;
+    letter-spacing: 0;
+}
+
+/* Tag pills */
+.proj-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.proj-tag {
+    font-size: 0.65em;
+    font-weight: 400;
+    padding: 2px 9px;
+    border-radius: 999px;
+    letter-spacing: 0.03em;
+}
+
+/* Tag colors — matched to site accent palette */
+.tag-sql      { background: #edf4fc; color: #5a7faa; border: 1px solid #c8ddf0; }
+.tag-python   { background: #f0f7ee; color: #5a8a5a; border: 1px solid #c0dab8; }
+.tag-r        { background: #fdf0ee; color: #a06060; border: 1px solid #f0c8c0; }
+.tag-nlp      { background: #f5eef8; color: #8860a0; border: 1px solid #dac8e8; }
+.tag-llm      { background: #eef3fb; color: #5870a8; border: 1px solid #c0cce8; }
+.tag-tableau  { background: #f8f0f5; color: #a06080; border: 1px solid #e8c8d8; }
+.tag-powerbi  { background: #fdf4ee; color: #a07050; border: 1px solid #f0d8c0; }
+.tag-excel    { background: #eef8f0; color: #508060; border: 1px solid #c0e0c8; }
+.tag-cloud    { background: #eef6fd; color: #4878a8; border: 1px solid #b8d8f0; }
+.tag-bigdata  { background: #fdf5ee; color: #a06840; border: 1px solid #f0d0b0; }
+.tag-alteryx  { background: #feeef0; color: #a05060; border: 1px solid #f0c0c8; }
+.tag-misc     { background: #f4f4f4; color: #808080; border: 1px solid #dddddd; }
+
+/* Projects wrapper — override old .features list inside #Projects */
+#Projects .features {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+@media screen and (max-width: 736px) {
+    .proj-card-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .proj-card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #projectTabs .tablinks {
+        font-size: 0.72em;
+        padding: 0.4em 0.9em;
+    }
+}
+
+/* Reduce top header space — logo/title are hidden */
+#header.alt {
+    padding: 3em 5em 2em 5em;
+}
+
+@media screen and (max-width: 1280px) {
+    #header.alt { padding: 2.5em 4em 1.5em 4em; }
+}
+
+@media screen and (max-width: 980px) {
+    #header.alt { padding: 2em 3em 1em 3em; }
+}
+
+@media screen and (max-width: 736px) {
+    #header.alt { padding: 1.5em 2em 1em 2em; }
+}
+
+@media screen and (max-width: 480px) {
+    #header.alt { padding: 1em 1.5em 0.5em 1.5em; }
+}
+
+/* Tighter section padding */
+#main > .main {
+    padding: 3em 5em 2em 5em;
+}
+
+@media screen and (max-width: 1280px) {
+    #main > .main { padding: 2.5em 4em 1.5em 4em; }
+}
+
+@media screen and (max-width: 980px) {
+    #main > .main { padding: 2em 3em 1em 3em; }
+}
+
+@media screen and (max-width: 736px) {
+    #main > .main { padding: 1.5em 2em 1em 2em; }
+}
+
+/* Tighter heading margin */
+header.major {
+    margin-bottom: 1.5em;
+}
+
+/* Reduce space between h3 lines inside feature cards */
+.features li h3 {
+    margin-bottom: 0.2em;
+    line-height: 1.4;
+}
+
+/* Tighter gap above feature cards */
+.features {
+    margin-top: 0;
+    margin-bottom: 1.5em;
+}
+
+/* ============================================
+   HORIZONTAL EXPERIENCE CARDS (Option A)
+   Add to bottom of main.css
+   ============================================ */
+
+.exp-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    text-align: left;
+}
+
+.exp-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 16px 20px;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    background: #ffffff;
+    transition: border-color 0.2s ease;
+}
+
+.exp-card:hover {
+    border-color: #a89cc8;
+}
+
+.exp-logo {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid #eeeeee;
+    padding: 4px;
+    background: #ffffff;
+}
+
+.exp-info {
+    flex: 1;
+}
+
+.exp-org {
+    font-size: 0.95em;
+    font-weight: 400;
+    color: #444444;
+    margin: 0 0 3px 0;
+}
+
+.exp-role {
+    font-size: 0.85em;
+    color: #636363;
+    margin: 0 0 3px 0;
+}
+
+.exp-meta {
+    font-size: 0.78em;
+    color: #999999;
+    margin: 0;
+}
+
+.exp-btn {
+    flex-shrink: 0;
+    font-size: 0.78em;
+    padding: 0 1em;
+    height: 2em;
+    line-height: 2em;
+    min-width: 0;
+    border-radius: 6px;
+    color: #636363 !important;
+    box-shadow: inset 0 0 0 1px #dddddd;
+    background: transparent;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.exp-btn:hover {
+    background-color: rgba(222, 222, 222, 0.35);
+}
+
+@media screen and (max-width: 736px) {
+    .exp-card {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .exp-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+#main > .main.special:last-child {
+    padding-bottom: 0 !important;
+}
+
+#main > .main.special:last-child header.major {
+    margin-bottom: 0 !important;
+}
+
+#main > .main.special:last-child header.major h2:after {
+    display: none !important;
+}
