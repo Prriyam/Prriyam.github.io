@@ -4,6 +4,11 @@ on:
   push:
     branches: [main]
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -12,7 +17,7 @@ jobs:
 
       - name: Create config.js from secrets
         run: |
-          cat > assets/js/config.js << EOF
+          cat > assets/js/config.js << 'EOF'
           const CONFIG = {
               GEMINI_API_KEY: "${{ secrets.GEMINI_API_KEY }}"
           };
