@@ -1,0 +1,4 @@
+.posts img {
+    max-width: 100%; /* This will make the image scale down while maintaining its aspect ratio */
+    height: auto; /* This ensures the image's height adjusts proportionally to the width */
+}
