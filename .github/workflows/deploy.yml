@@ -6,8 +6,6 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 jobs:
   deploy:
@@ -28,12 +26,10 @@ jobs:
           };
           EOF
 
-      - name: Verify config.js created
-        run: cat assets/js/config.js
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .
           force_orphan: true
+          exclude_assets: '.gitignore,.github'
