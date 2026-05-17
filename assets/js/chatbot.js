@@ -2,9 +2,10 @@
    PORTFOLIO CHATBOT — Gemini API + EmailJS
    ============================================ */
 
-const GEMINI_API_KEY = CONFIG.GEMINI_API_KEY;
+// const GEMINI_API_KEY = CONFIG.GEMINI_API_KEY;
 const GEMINI_MODEL   = "gemini-2.5-flash";
-const GEMINI_URL     = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
+// const GEMINI_URL     = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
+const GEMINI_URL = "https://gemini-proxy.prriyam-partha.workers.dev/";
 
 const EMAILJS_PUBLIC_KEY  = EMAIL_CONFIG.EMAILJS_PUBLIC_KEY;
 const EMAILJS_SERVICE_ID  = EMAIL_CONFIG.EMAILJS_SERVICE_ID;

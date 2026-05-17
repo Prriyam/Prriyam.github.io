@@ -16,9 +16,7 @@ jobs:
       - name: Create config.js from secrets
         run: |
           cat > assets/js/config.js << 'EOF'
-          const CONFIG = {
-              GEMINI_API_KEY: "${{ secrets.GEMINI_API_KEY }}"
-          };
+          const CONFIG = {};
           const EMAIL_CONFIG = {
               EMAILJS_PUBLIC_KEY:  "${{ secrets.EMAILJS_PUBLIC_KEY }}",
               EMAILJS_SERVICE_ID:  "${{ secrets.EMAILJS_SERVICE_ID }}",
